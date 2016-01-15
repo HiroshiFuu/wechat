@@ -134,7 +134,7 @@ class wechatCallbackapiTest
 		$keyword = trim($postObj->Content); 
 		if(!empty( $keyword ))
 		{
-			
+			$keyword = trim($keyword);	
 			switch( $keyword )
 			{
 				case "a" :
