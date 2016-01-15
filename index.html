@@ -2,11 +2,20 @@
    <head>
       <script type="text/javascript">
             function Redirect() {
-               window.location="http://fenghao.bitnamiapp.com:8000/";
+               window.location="http://fenghao.bitnamiapp.com:/FengHaoSite";
             }
 			
-			document.write("You will be redirected to My Site in 1 sec.");
-            setTimeout('Redirect()', 1000);
+			document.write("You will be redirected to My Site in 3 sec.");
+			
+			function Write2sec() {
+				document.write("You will be redirected to My Site in 2 sec.");
+			}
+			function Write1sec() {
+				document.write("You will be redirected to My Site in 2 sec.");
+			}
+            setTimeout('Redirect()', 3000);
+            setTimeout('Write1sec()', 2000);
+            setTimeout('Write2sec()', 1000);
       </script>
    </head>
    
