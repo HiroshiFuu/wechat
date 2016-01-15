@@ -319,8 +319,8 @@ class wechatCallbackapiTest
 					$record=array(
 					'title' => 'Testing',
 					'description' => '' . __ROOT__ . '/main/bakerzin.jpg',
-					'picUrl' => '',
-					'url' => ''
+					'picUrl' => '' . __ROOT__ . '/main/bakerzin.jpg',
+					'url' => '' . __ROOT__ . '/main/bakerzin.jpg'
 					);
 					$resultStr = response_news($postObj, $record);
 					break;
