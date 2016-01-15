@@ -2,6 +2,8 @@
 /**
   * wechat php test
   */
+define('Server_Address', "http://fenghao.bitnamiapp.com");
+
 define('__ROOT__', dirname(__FILE__));
 include("wechatMessage.php");
 require_once(__ROOT__ . '/wechatMessage.php'); 
@@ -114,7 +116,7 @@ class wechatCallbackapiTest
 				$record=array(
 				'title' => 'Welcome to Bakerzin!',
 				'description' => 'Type "bakerzin" to display all functions. And then enter the function code to query. Or...' . "\n\n" . 'Type "info" to display the opening hours and location.' . "\n\n" . 'Type "menu" to display a list of menu items.' . "\n\n" . 'Type "Q&A" to display terms and conditions.' . "\n\n" . 'Type "where" to dispaly a map of all locations of Bakerzin in Singapore.' . "\n\n" . 'Send LOCATION to show nearest outlet.',
-				'picUrl' => __ROOT__ . '/main/bakerzin.jpg',
+				'picUrl' => Server_Address . '/main/bakerzin.jpg',
 				'url' => ''
 				);
 				$resultStr = response_news($postObj, $record);
@@ -151,25 +153,25 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'A Selectioon of Gourmet Delicates',
 					'description' => 'null',
-					'picUrl' => __ROOT__ . '/menu/menu-title.jpg',
+					'picUrl' => Server_Address . '/menu/menu-title.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
 					'title' => 'B1. DESSERTS',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/menu/desserts.bmp',
+					'picUrl' => Server_Address . '/menu/desserts.bmp',
 					'url' =>''
 					);
 					$record[2]=array(
 					'title' => 'B2. APPETISERS & STARTERS',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/menu/A&S.bmp',
+					'picUrl' => Server_Address . '/menu/A&S.bmp',
 					'url' => ''
 					);
 					$record[3]=array(
 					'title' => 'B3. PASTA',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/menu/pasta.bmp',
+					'picUrl' => Server_Address . '/menu/pasta.bmp',
 					'url' => ''
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
@@ -179,25 +181,25 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'DESSERTS',
 					'description' => 'null',
-					'picUrl' => __ROOT__ . '/desserts/desserts.bmp',
+					'picUrl' => Server_Address . '/desserts/desserts.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
 					'title' => 'TIRAMISU',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/desserts/tiramisu.bmp',
+					'picUrl' => Server_Address . '/desserts/tiramisu.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=2&sn=f8e95cae08a827951dbe59d2b6b13f23#rd'
 					);
 					$record[2]=array(
 					'title' => 'ADAGIO',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/desserts/adagio.bmp',
+					'picUrl' => Server_Address . '/desserts/adagio.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=3&sn=47fffcec06bffb15b90192ec958e88c6#rd'
 					);
 					$record[3]=array(
 					'title' => 'OPERA',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/desserts/opera.bmp',
+					'picUrl' => Server_Address . '/desserts/opera.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=4&sn=92c6aef704facf60d6940740283f946d#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
@@ -207,25 +209,25 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'APPETISERS & STARTERS',
 					'description' => 'null',
-					'picUrl' => __ROOT__ . '/A&S/A&S.bmp',
+					'picUrl' => Server_Address . '/A&S/A&S.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
 					'title' => 'BAKED CHICKEN WINGS',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/A&S/BCW.bmp',
+					'picUrl' => Server_Address . '/A&S/BCW.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=2&sn=e64df5c94cd5722b5919578350f8e07e#rd'
 					);
 					$record[2]=array(
 					'title' => 'BAKED PORK SAUSAGES',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/A&S/BPS.bmp',
+					'picUrl' => Server_Address . '/A&S/BPS.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=3&sn=c511224e45a9932ceb6c8feffdb954af#rd'
 					);
 					$record[3]=array(
 					'title' => 'BAKED POTATO WEDGES',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/A&S/BPW.bmp',
+					'picUrl' => Server_Address . '/A&S/BPW.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=4&sn=e13f8ae1d644db60d077954adbb58d30#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
@@ -235,25 +237,25 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'PASTA',
 					'description' => 'null',
-					'picUrl' => __ROOT__ . '/A&S/A&S.bmp',
+					'picUrl' => Server_Address . '/A&S/A&S.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
 					'title' => 'CARBONARA',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/pasta/carbonara.bmp',
+					'picUrl' => Server_Address . '/pasta/carbonara.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=2&sn=c0c646d2a2a2e939f9c250c8b3885784#rd'
 					);
 					$record[2]=array(
 					'title' => 'CREAM MUSHROOM PENE',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/pasta/CMP.bmp',
+					'picUrl' => Server_Address . '/pasta/CMP.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=3&sn=e78e0ae99dc91c00df4af98f598df251#rd'
 					);
 					$record[3]=array(
 					'title' => 'SEAFOOD PASTA',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/pasta/SP.bmp',
+					'picUrl' => Server_Address . '/pasta/SP.bmp',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=4&sn=6d990c9460d05cc1697e448e46ea6fc8#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
@@ -266,7 +268,7 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'Terms & Conditions',
 					'description' =>'',
-					'picUrl' => __ROOT__ . '/T&C-title.jpg',
+					'picUrl' => Server_Address . '/T&C-title.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
@@ -309,7 +311,7 @@ class wechatCallbackapiTest
 					$record=array(
 					'title' => 'Stroe Locator',
 					'description' => 'A : Jurong Point' . "\n" . 'B : Northpoint' . "\n" . 'C : Gardens by the Bay',
-					'picUrl' => __ROOT__ . '/staticmap.jpg',
+					'picUrl' => Server_Address . '/staticmap.jpg',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201297247&idx=1&sn=0e7a2fa4901c211206b5bceb3e273d1f#rd'
 					);
 					$resultStr = response_news($postObj, $record);
@@ -319,8 +321,8 @@ class wechatCallbackapiTest
 					$record=array(
 					'title' => 'Testing',
 					'description' => '' . __ROOT__ . '/main/bakerzin.jpg',
-					'picUrl' => '' . __ROOT__ . '/main/bakerzin.jpg',
-					'url' => '' . __ROOT__ . '/main/bakerzin.jpg'
+					'picUrl' => Server_Address . '/main/bakerzin.jpg',
+					'url' => ''
 					);
 					$resultStr = response_news($postObj, $record);
 					break;
@@ -330,25 +332,25 @@ class wechatCallbackapiTest
 					$record[0]=array(
 					'title' => 'Welcome to Bakerzin!',
 					'description' => 'null',
-					'picUrl' => __ROOT__ . '/main/bakerzin.jpg',
+					'picUrl' => Server_Address . '/main/bakerzin.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
 					'title' => 'A. Basic Info',
 					'description' => 'Opening Hour, Location',
-					'picUrl' => __ROOT__ . '/main/about-us.jpg',
+					'picUrl' => Server_Address . '/main/about-us.jpg',
 					'url' => ''
 					);
 					$record[2]=array(
 					'title' => 'B. Menu',
 					'description' => 'A Selectioon of Gourmet Delicates',
-					'picUrl' => __ROOT__ . '/main/menu.jpg',
+					'picUrl' => Server_Address . '/main/menu.jpg',
 					'url' => ''
 					);
 					$record[3]=array(
 					'title' => 'C. Terms & Conditions',
 					'description' => 'DELIVERY CHARGES, AMENDMENTS AND CANCELLATION, DELIVERY INFORMATION',
-					'picUrl' => __ROOT__ . '/main/T&C.jpg',
+					'picUrl' => Server_Address . '/main/T&C.jpg',
 					'url' => ''
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
