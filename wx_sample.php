@@ -112,8 +112,8 @@ class wechatCallbackapiTest
 		{
 			case "subscribe":
 				$record=array(
-				'title' =>'Welcome to Bakerzin!',
-				'description' =>'Type "bakerzin" to display all functions. And then enter the function code to query. Or...' . "\n\n" . 'Type "info" to display the opening hours and location.' . "\n\n" . 'Type "menu" to display a list of menu items.' . "\n\n" . 'Type "Q&A" to display terms and conditions.' . "\n\n" . 'Type "where" to dispaly a map of all locations of Bakerzin in Singapore.' . "\n\n" . 'Send LOCATION to show nearest outlet.',
+				'title' => 'Welcome to Bakerzin!',
+				'description' => 'Type "bakerzin" to display all functions. And then enter the function code to query. Or...' . "\n\n" . 'Type "info" to display the opening hours and location.' . "\n\n" . 'Type "menu" to display a list of menu items.' . "\n\n" . 'Type "Q&A" to display terms and conditions.' . "\n\n" . 'Type "where" to dispaly a map of all locations of Bakerzin in Singapore.' . "\n\n" . 'Send LOCATION to show nearest outlet.',
 				'picUrl' => __ROOT__ . '/main/bakerzin.jpg',
 				'url' => ''
 				);
@@ -149,25 +149,25 @@ class wechatCallbackapiTest
 				case "menu" :
 				case "Menu" :
 					$record[0]=array(
-					'title' =>'A Selectioon of Gourmet Delicates',
-					'description' =>'null',
+					'title' => 'A Selectioon of Gourmet Delicates',
+					'description' => 'null',
 					'picUrl' => __ROOT__ . '/menu/menu-title.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'B1. DESSERTS',
+					'title' => 'B1. DESSERTS',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/menu/desserts.bmp',
 					'url' =>''
 					);
 					$record[2]=array(
-					'title' =>'B2. APPETISERS & STARTERS',
+					'title' => 'B2. APPETISERS & STARTERS',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/menu/A&S.bmp',
 					'url' => ''
 					);
 					$record[3]=array(
-					'title' =>'B3. PASTA',
+					'title' => 'B3. PASTA',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/menu/pasta.bmp',
 					'url' => ''
@@ -177,84 +177,84 @@ class wechatCallbackapiTest
 				case "b1" :
 				case "B1" :
 					$record[0]=array(
-					'title' =>'DESSERTS',
-					'description' =>'null',
+					'title' => 'DESSERTS',
+					'description' => 'null',
 					'picUrl' => __ROOT__ . '/desserts/desserts.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'TIRAMISU',
+					'title' => 'TIRAMISU',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/desserts/tiramisu.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=2&sn=f8e95cae08a827951dbe59d2b6b13f23#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=2&sn=f8e95cae08a827951dbe59d2b6b13f23#rd'
 					);
 					$record[2]=array(
-					'title' =>'ADAGIO',
+					'title' => 'ADAGIO',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/desserts/adagio.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=3&sn=47fffcec06bffb15b90192ec958e88c6#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=3&sn=47fffcec06bffb15b90192ec958e88c6#rd'
 					);
 					$record[3]=array(
-					'title' =>'OPERA',
+					'title' => 'OPERA',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/desserts/opera.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=4&sn=92c6aef704facf60d6940740283f946d#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296610&idx=4&sn=92c6aef704facf60d6940740283f946d#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
 					break;
 				case "b2" :
 				case "B2" :
 					$record[0]=array(
-					'title' =>'APPETISERS & STARTERS',
-					'description' =>'null',
+					'title' => 'APPETISERS & STARTERS',
+					'description' => 'null',
 					'picUrl' => __ROOT__ . '/A&S/A&S.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'BAKED CHICKEN WINGS',
+					'title' => 'BAKED CHICKEN WINGS',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/A&S/BCW.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=2&sn=e64df5c94cd5722b5919578350f8e07e#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=2&sn=e64df5c94cd5722b5919578350f8e07e#rd'
 					);
 					$record[2]=array(
-					'title' =>'BAKED PORK SAUSAGES',
+					'title' => 'BAKED PORK SAUSAGES',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/A&S/BPS.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=3&sn=c511224e45a9932ceb6c8feffdb954af#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=3&sn=c511224e45a9932ceb6c8feffdb954af#rd'
 					);
 					$record[3]=array(
-					'title' =>'BAKED POTATO WEDGES',
+					'title' => 'BAKED POTATO WEDGES',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/A&S/BPW.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=4&sn=e13f8ae1d644db60d077954adbb58d30#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296670&idx=4&sn=e13f8ae1d644db60d077954adbb58d30#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
 					break;
 				case "b3" :
 				case "B3" :
 					$record[0]=array(
-					'title' =>'PASTA',
-					'description' =>'null',
+					'title' => 'PASTA',
+					'description' => 'null',
 					'picUrl' => __ROOT__ . '/A&S/A&S.bmp',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'CARBONARA',
+					'title' => 'CARBONARA',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/pasta/carbonara.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=2&sn=c0c646d2a2a2e939f9c250c8b3885784#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=2&sn=c0c646d2a2a2e939f9c250c8b3885784#rd'
 					);
 					$record[2]=array(
-					'title' =>'CREAM MUSHROOM PENE',
+					'title' => 'CREAM MUSHROOM PENE',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/pasta/CMP.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=3&sn=e78e0ae99dc91c00df4af98f598df251#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=3&sn=e78e0ae99dc91c00df4af98f598df251#rd'
 					);
 					$record[3]=array(
-					'title' =>'SEAFOOD PASTA',
+					'title' => 'SEAFOOD PASTA',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/pasta/SP.bmp',
-					'url' =>'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=4&sn=6d990c9460d05cc1697e448e46ea6fc8#rd'
+					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201296738&idx=4&sn=6d990c9460d05cc1697e448e46ea6fc8#rd'
 					);
 					$resultStr = response_Multiplenews($postObj, $record);
 					break;
@@ -264,26 +264,26 @@ class wechatCallbackapiTest
 				case "Q&A" :
 				case "Q&a" :
 					$record[0]=array(
-					'title' =>'Terms & Conditions',
+					'title' => 'Terms & Conditions',
 					'description' =>'',
 					'picUrl' => __ROOT__ . '/T&C-title.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'C1. DELIVERY CHARGES',
-					'description' =>'DELIVERY CHARGES',
+					'title' => 'C1. DELIVERY CHARGES',
+					'description' => 'DELIVERY CHARGES',
 					'picUrl' => '',
 					'url' =>''
 					);
 					$record[2]=array(
-					'title' =>'C2. AMENDMENTS AND CANCELLATION',
-					'description' =>'AMENDMENTS AND CANCELLATION',
+					'title' => 'C2. AMENDMENTS AND CANCELLATION',
+					'description' => 'AMENDMENTS AND CANCELLATION',
 					'picUrl' => '',
 					'url' => ''
 					);
 					$record[3]=array(
-					'title' =>'C3. DELIVERY INFORMATION',
-					'description' =>'DELIVERY INFORMATION',
+					'title' => 'C3. DELIVERY INFORMATION',
+					'description' => 'DELIVERY INFORMATION',
 					'picUrl' => '',
 					'url' => ''
 					);
@@ -307,37 +307,46 @@ class wechatCallbackapiTest
 				case "where" :
 				case "Where" :
 					$record=array(
-					'title' =>'Stroe Locator',
-					'description' =>'A : Jurong Point' . "\n" . 'B : Northpoint' . "\n" . 'C : Gardens by the Bay',
+					'title' => 'Stroe Locator',
+					'description' => 'A : Jurong Point' . "\n" . 'B : Northpoint' . "\n" . 'C : Gardens by the Bay',
 					'picUrl' => __ROOT__ . '/staticmap.jpg',
 					'url' => 'http://mp.weixin.qq.com/s?__biz=MzAwMzAyOTM0Mg==&mid=201297247&idx=1&sn=0e7a2fa4901c211206b5bceb3e273d1f#rd'
 					);
 					$resultStr = response_news($postObj, $record);
 					break;
+				case "testing" :
+				case "Testing" : 
+					$record=array(
+					'title' => 'Testing',
+					'description' => __ROOT__ . '/main/bakerzin.jpg',
+					'picUrl' => '',
+					'url' => ''
+					);
+					$resultStr = response_news($postObj, $record);
 				case "bakerzin" :
 				case "Bakerzin" :
 				default:
 					$record[0]=array(
-					'title' =>'Welcome to Bakerzin!',
-					'description' =>'null',
+					'title' => 'Welcome to Bakerzin!',
+					'description' => 'null',
 					'picUrl' => __ROOT__ . '/main/bakerzin.jpg',
 					'url' => ''
 					);
 					$record[1]=array(
-					'title' =>'A. Basic Info',
-					'description' =>'Opening Hour, Location',
+					'title' => 'A. Basic Info',
+					'description' => 'Opening Hour, Location',
 					'picUrl' => __ROOT__ . '/main/about-us.jpg',
 					'url' => ''
 					);
 					$record[2]=array(
-					'title' =>'B. Menu',
-					'description' =>'A Selectioon of Gourmet Delicates',
+					'title' => 'B. Menu',
+					'description' => 'A Selectioon of Gourmet Delicates',
 					'picUrl' => __ROOT__ . '/main/menu.jpg',
 					'url' => ''
 					);
 					$record[3]=array(
-					'title' =>'C. Terms & Conditions',
-					'description' =>'DELIVERY CHARGES, AMENDMENTS AND CANCELLATION, DELIVERY INFORMATION',
+					'title' => 'C. Terms & Conditions',
+					'description' => 'DELIVERY CHARGES, AMENDMENTS AND CANCELLATION, DELIVERY INFORMATION',
 					'picUrl' => __ROOT__ . '/main/T&C.jpg',
 					'url' => ''
 					);
