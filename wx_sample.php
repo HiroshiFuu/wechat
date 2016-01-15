@@ -318,11 +318,12 @@ class wechatCallbackapiTest
 				case "Testing" : 
 					$record=array(
 					'title' => 'Testing',
-					'description' => __ROOT__ . '/main/bakerzin.jpg',
+					'description' => '' . __ROOT__ . '/main/bakerzin.jpg',
 					'picUrl' => '',
 					'url' => ''
 					);
 					$resultStr = response_news($postObj, $record);
+					break;
 				case "bakerzin" :
 				case "Bakerzin" :
 				default:
